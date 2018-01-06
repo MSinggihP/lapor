@@ -41,11 +41,6 @@ $$('#home').on('click', function () {
                     '</a>'+
                 '</li>'+
                 '<li>'+
-                    '<a class="menu close-panel tab-link" href="#tab9">'+
-                        '<div class="item-title menu">Pengaturan</div>'+
-                    '</a>'+
-                '</li>'+
-                '<li>'+
                     '<a class="open-login-screen" href="#">'+
                         '<div class="item-title menu"> Login</div>'+
                     '</a>'+
@@ -59,11 +54,11 @@ $$('#home').on('click', function () {
                         '<p> Developed by: TIM anak Mampang</p>'+
                     '</div>';
     document.getElementById("tab").innerHTML = 
-                '<a href="#tab1" id="tab1" class="tab-link active"><i class="f7-icons">home</i></a>'+
-                '<a onclick="blmLogin()" id="tab2" class="tab-link"><i class="f7-icons">chat</i></a>'+
-                '<a onclick="blmLogin()" id="tab3" class="tab-link"><i class="f7-icons">add</i></a>'+
-                '<a href="#tab4" id="tab4" class="tab-link"><i class="f7-icons">bell</i></a>'+
-                '<a href="#" data-panel="right" class="tab-link open-panel"><i class="f7-icons">menu</i></a>';
+                '<a href="#tab1" id="tab1" class="tab-link active"><i class="f7-icons">home_fill</i></a>'+
+                '<a onclick="blmLogin()" id="tab2" class="tab-link"><i class="f7-icons">chat_fill</i></a>'+
+                '<a onclick="blmLogin()" id="tab3" class="tab-link"><i class="f7-icons">add_round_fill</i></a>'+
+                '<a href="#tab4" id="tab4" class="tab-link"><i class="f7-icons">bell_fill</i></a>'+
+                '<a href="#" data-panel="right" class="tab-link open-panel"><i class="f7-icons">more_round_fill</i></a>';
 });
 
 
@@ -109,11 +104,6 @@ $$('.close-login-screen').on('click', function () {
                         '</a>'+
                     '</li>'+
                     '<li>'+
-                        '<a class="menu close-panel tab-link" href="#tab9">'+
-                            '<div class="item-title menu">Pengaturan</div>'+
-                        '</a>'+
-                    '</li>'+
-                    '<li>'+
                         '<a class="open-login-screen" href="#">'+
                             '<div class="item-title menu"> Logout</div>'+
                         '</a>'+
@@ -127,11 +117,11 @@ $$('.close-login-screen').on('click', function () {
                             '<p> Developed by: TIM anak Mampang</p>'+
                         '</div>';
             document.getElementById("tab").innerHTML = 
-                    '<a href="#tab1" id="tab1" class="tab-link active"><i class="f7-icons">home</i></a>'+
-                    '<a href="#tab2" id="tab2" class="tab-link"><i class="f7-icons">chat</i></a>'+
-                    '<a href="#tab3" id="tab3" class="tab-link"><i class="f7-icons">add</i></a>'+
-                    '<a href="#tab4" id="tab4" class="tab-link"><i class="f7-icons">bell</i></a>'+
-                    '<a href="#" data-panel="right" class="tab-link open-panel"><i class="f7-icons">menu</i></a>';
+                    '<a href="#tab1" id="tab1" class="tab-link active"><i class="f7-icons">home_fill</i></a>'+
+                    '<a href="#tab2" id="tab2" class="tab-link"><i class="f7-icons">chat_fill</i></a>'+
+                    '<a href="#tab3" id="tab3" class="tab-link"><i class="f7-icons">add_round_fill</i></a>'+
+                    '<a href="#tab4" id="tab4" class="tab-link"><i class="f7-icons">bell_fill</i></a>'+
+                    '<a href="#" data-panel="right" class="tab-link open-panel"><i class="f7-icons">more_round_fill</i></a>';
             }else if(res[0].level_id==3){
                 myApp.closeModal();
                 myApp.alert('Login Berhasil! Hi Pak '+$section_user,'Lapor RT');
@@ -141,8 +131,25 @@ $$('.close-login-screen').on('click', function () {
                         '</a>'+
                     '</li>'+
                     '<li>'+
-                        '<a class="menu close-panel tab-link" href="#tab9">'+
-                            '<div class="item-title menu">Pengaturan</div>'+
+                        '<a class="menu close-panel tab-link" href="#tab6">'+
+                            '<div class="item-title menu">Administrasi</div>'+
+                        '</a>'+
+                    '</li>'+
+                    '<li class="accordion-item">'+
+                        '<a class="menu close-panel tab-link" href="#tab7">'+
+                            '<div class="item-inner">'+
+                                '<div class="item-title menu">Iuran</div>'+
+                            '</div>'+
+                        '</a>'+
+                    '</li>'+
+                    '<li>'+
+                        '<a class="menu close-panel tab-link" href="#tab8">'+
+                            '<div class="item-title menu">Organisasi</div>'+
+                        '</a>'+
+                    '</li>'+
+                    '<li>'+
+                        '<a class="menu close-panel tab-link" href="#tab6">'+
+                            '<div class="item-title menu">Data Warga</div>'+
                         '</a>'+
                     '</li>'+
                     '<li>'+
@@ -159,11 +166,11 @@ $$('.close-login-screen').on('click', function () {
                             '<p> Developed by: TIM anak Mampang</p>'+
                         '</div>';
                 document.getElementById("tab").innerHTML = 
-                    '<a href="#tab1rt" id="tab1" class="tab-link active"><i class="f7-icons">home</i></a>'+
-                    '<a href="#tab2rt" id="tab2" class="tab-link"><i class="f7-icons">chat</i></a>'+
-                    '<a href="#tab3rt" id="tab3" class="tab-link"><i class="f7-icons">add</i></a>'+
-                    '<a href="#tab4rt" id="tab4" class="tab-link"><i class="f7-icons">bell</i></a>'+
-                    '<a href="#" data-panel="right" class="tab-link open-panel"><i class="f7-icons">menu</i></a>';
+                    '<a href="#tab1rt" id="tab1" class="tab-link active"><i class="f7-icons">home_fill</i></a>'+
+                    '<a href="#tab2rt" id="tab2" class="tab-link"><i class="f7-icons">chat_fill</i></a>'+
+                    '<a href="#tab3rt" id="tab3" class="tab-link"><i class="f7-icons">add_round_fill</i></a>'+
+                    '<a href="#tab4rt" id="tab4" class="tab-link"><i class="f7-icons">bell_fill</i></a>'+
+                    '<a href="#" data-panel="right" class="tab-link open-panel"><i class="f7-icons">more_round_fill</i></a>';
             }
             
             }
